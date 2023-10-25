@@ -14,22 +14,22 @@ const styles = StyleSheet.create({
     color: colors.text,
     fontSize: 16,
   },
-  seperator: {
+  separator: {
     backgroundColor: colors.border,
     height: StyleSheet.hairlineWidth,
     marginLeft: 20,
   },
 });
 
-export default function RowItem({ rightIcon, text, onPress }) {
+export const RowItem = ({ rightIcon, text, onPress }) => {
   return (
     <>
       <TouchableOpacity style={styles.row} onPress={onPress}>
         <Text style={styles.title}>{text}</Text>
         {rightIcon}
       </TouchableOpacity>
-
-      <View style={styles.seperator}></View>
     </>
   );
-}
+};
+
+export const RowSeparator = () => <View style={styles.separator} />;

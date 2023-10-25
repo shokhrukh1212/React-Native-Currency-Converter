@@ -1,7 +1,7 @@
 import { Alert, Linking, SafeAreaView, ScrollView } from "react-native";
 import { Entypo } from "@expo/vector-icons";
 import colors from "../constants/colors";
-import RowItem from "../components/RowItem";
+import { RowItem } from "../components/RowItem";
 
 export default () => {
   const openUrl = (url) => {

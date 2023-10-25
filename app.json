@@ -1,11 +1,13 @@
 {
   "expo": {
-    "name": "CurrencyConverter",
-    "slug": "CurrencyConverter",
+    "name": "MotherTask",
+    "slug": "MotherTask",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -15,12 +17,15 @@
     },
     "android": {
       "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "androidStatusBar": {
       "translucet": false
     },
-    "web": {}
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
   }
 }

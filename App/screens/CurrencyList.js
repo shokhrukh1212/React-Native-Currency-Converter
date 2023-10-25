@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { StatusBar, View, FlatList, StyleSheet } from "react-native";
-import { RowItem, RowSeperator } from "../components/RowItem";
+import { RowItem, RowSeparator } from "../components/RowItem";
 import colors from "../constants/colors";
 import currencies from "../data/currensies.json";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -58,7 +58,7 @@ export default ({ navigation, route = {} }) => {
             }
           />;
         }}
-        ItemSeparatorComponent={RowSeperator}
+        ItemSeparatorComponent={RowSeparator}
         ListFooterComponent={() => {
           <View style={{ paddingBottom: insets.bottom }} />;
         }}
